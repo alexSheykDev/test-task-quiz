@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "type": "select-sex",
+    "question": "What is your gender assigned at birth?",
+    "subTitle": "Please select your sex",
+    "options": ["Male", "Female"],
+    "additionalOptions": {
+      "hideNextButton": true
+    }
+  },
+  {
+    "id": 2,
+    "type": "single-variant",
+    "question": "Are you currently pregnant?",
+    "options": ["Yes", "No"],
+    "conditionalBlock": {
+      "dependsOn": 1,
+      "value": "Female"
+    }
+  },
+  {
+    "id": 3,
+    "type": "custom-input",
+    "question": "Do you have any known allergies?"
+  },
+  {
+    "id": 4,
+    "type": "completion",
+    "question": "You are all set!"
+  }
+]
